@@ -1,5 +1,17 @@
 # Git Workflow Rules
 
+# Operating Mode
+
+**Default Behavior - Investigate and Report Only:**
+- When asked to "review", "suggest", "check", or similar investigative requests, ONLY analyze and provide recommendations
+- Do NOT make changes to files unless explicitly instructed with action words like "make", "create", "update", "fix", "implement"
+- Present findings and suggestions, then wait for explicit direction to proceed
+
+**When to Take Action:**
+- Only make changes when explicitly requested with clear action verbs
+- When action is requested, invoke the appropriate specialized subagent from `.agents/` to perform the task
+- Confirm understanding of the task before delegating to subagent
+
 # Available Agents
 
 For detailed information about available subagents and their organization and usage, see `.agents/README.md`.
