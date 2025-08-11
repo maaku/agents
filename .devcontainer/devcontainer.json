@@ -1,0 +1,24 @@
+{
+  "name": "Claude Code Development",
+  "dockerFile": "Dockerfile",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "24"
+    }
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code",
+        "ms-azuretools.vscode-containers",
+        "mutantdino.resourcemonitor"
+      ]
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && claude --version && git config --global --add safe.directory /workspace"
+}
