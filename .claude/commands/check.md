@@ -477,6 +477,3 @@ Call `architecture-strategist` agent to assess each strategy:
 - Balance criticism with recognition of good practices
 
 **These rules are non-negotiable and apply to all AI agent interactions using this workflow.**
-
-*Last Updated: 2025-08-25*
-*Version: 1.0*
